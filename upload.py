@@ -49,6 +49,7 @@ def retrieve_asset_info_from_blockchain(asa_id: int) -> Dict[str, Union[str, int
             "short_name": "ALGO",
             "decimals": 6,
             "asa_id": asa_id,
+            "network": NETWORK,
         }
 
     asset_info = INDEXER_CLIENT.asset_info(asa_id)
